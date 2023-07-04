@@ -69,7 +69,7 @@ input{
 #postOfficeCards{
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    grid-template-columns: repeat(2, 1fr); /* repeat(how many column,1fr) */
   grid-gap: 10px;
 
 }
