@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;    
+    margin: 10px 10px 10px;
+    font-size: large
+}
+body{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+button{
+    background-color: black;
+    color: #ffff;
+    margin:15px 0px ;
+   padding: 4px 17px;
+    border-radius:5px;
+}
+
+
+h2{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+#ip-details{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+#ip-address{
+    color: blue;
+}
+
+#map{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+iframe{
+    width: 100%;
+    height: 400px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 2010px;
+}
+#filter_box{
+    position: absolute;
+    margin-left: -40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#filter-container span{
+    position: relative;
+    left: 55px;
+}
+input{
+    padding: 15px 35px;
+    border: 1px solid black;
+    width: 93vw;
+    border-radius: 10px;
+}
+#postOfficeCards{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  grid-gap: 10px;
+
+}
+#postOffice{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+}
+@media (min-width: 840px) and (max-width: 1168px) {
+    input{
+        width: 90vw;
+    }
+    #ip-details{
+        flex-direction: column;
+        gap: 0px;
+    }
+    *{
+        font-size: medium;
+    }
+}
+@media (max-width:840px) {
+    input{
+        width: 80vw;
+    }
+    #ip-details{
+        flex-direction: column;
+        gap: 0px;
+    }
+    #postOfficeCards{
+        display: flex;
+        flex-direction: column;
+    }
+    *{
+        font-size: medium;
+    }
+}
